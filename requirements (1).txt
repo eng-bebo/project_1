@@ -1,0 +1,13 @@
+# requirements.txt
+# Pin exact versions so the project builds identically on every machine.
+# Install with:  pip install -r requirements.txt
+
+# --- Backend ---
+fastapi==0.115.5          # Web framework
+uvicorn[standard]==0.32.1 # ASGI server
+sqlalchemy==2.0.36        # ORM + SQLite driver (sqlite3 is in stdlib)
+pydantic==2.10.2          # Data validation (bundled with FastAPI, explicit pin)
+
+# --- CLI ---
+requests==2.32.3          # HTTP client
+rich==13.9.4              # Terminal formatting (tables, colours, panels)
